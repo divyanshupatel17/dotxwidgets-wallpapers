@@ -254,8 +254,68 @@ RECIPES: list[Recipe] = [
            ["light", "grey", "gray", "neutral", "soft"], grain=3.0),
     Recipe("blur_verdant", "Verdant", "blur", ["#04100B", "#22C55E", "#14532D", "#052E16"],
            ["dark", "green", "grain", "nature"], grain=3.5),
-]
+    # -- Solid, second wave ------------------------------------------------------------------
+    Recipe("solid_espresso", "Espresso", "solid", ["#2B1B14"], ["brown", "coffee", "warm", "dark"]),
+    Recipe("solid_mocha", "Mocha", "solid", ["#A47864"], ["brown", "mocha", "warm", "neutral", "earth"],
+           top_pick=True),
+    Recipe("solid_slate_blue", "Slate Blue", "solid", ["#334155"], ["blue", "grey", "gray", "muted"]),
+    Recipe("solid_deep_plum", "Deep Plum", "solid", ["#2E1065"], ["purple", "plum", "dark", "rich"]),
+    Recipe("solid_blush", "Blush", "solid", ["#F5D5D0"], ["pink", "light", "soft", "pastel"]),
+    Recipe("solid_olive", "Olive", "solid", ["#3F4A2E"], ["green", "olive", "earth", "muted"]),
+    Recipe("solid_steel", "Steel", "solid", ["#6B7280"], ["grey", "gray", "neutral", "mid"]),
+    Recipe("solid_cream", "Cream", "solid", ["#FAF6EF"], ["white", "cream", "light", "warm"]),
 
+    # -- Gradient, second wave ---------------------------------------------------------------
+    # The combinations people actually keep: a warm sunset, a cool night, one pastel per hue,
+    # and the muted earth tones that read as expensive rather than loud.
+    Recipe("gradient_peach_sunset", "Peach Sunset", "gradient", ["#FFE8D6", "#FF7E5F"],
+           ["light", "peach", "orange", "sunset", "warm"], gamma=2.0, top_pick=True, grain=1.2),
+    Recipe("gradient_midnight_sapphire", "Midnight Sapphire", "gradient", ["#05080F", "#1E3A8A"],
+           ["dark", "blue", "navy", "midnight", "deep"], gamma=2.5, grain=1.2),
+    Recipe("gradient_lavender_haze", "Lavender Haze", "gradient", ["#F3E8FF", "#A855F7"],
+           ["light", "purple", "lavender", "pastel", "soft"], gamma=2.1, top_pick=True, grain=1.2),
+    Recipe("gradient_mint_cream", "Mint Cream", "gradient", ["#F0FDF4", "#34D399"],
+           ["light", "green", "mint", "fresh", "pastel"], gamma=2.2, grain=1.2),
+    Recipe("gradient_coral_blush", "Coral Blush", "gradient", ["#FFF1F2", "#FB7185"],
+           ["light", "pink", "coral", "soft", "pastel"], gamma=2.2, grain=1.2),
+    Recipe("gradient_sunset_gold", "Sunset Gold", "gradient", ["#1A0E06", "#FFB347"],
+           ["dark", "gold", "orange", "sunset", "warm"], gamma=2.7, top_pick=True, grain=1.2),
+    Recipe("gradient_rose_gold", "Rose Gold", "gradient", ["#FFF5F0", "#E8B4A0"],
+           ["light", "rose gold", "pink", "neutral", "premium"], gamma=1.8, grain=1.2),
+    Recipe("gradient_arctic", "Arctic", "gradient", ["#E0F2FE", "#0284C7"],
+           ["light", "blue", "ice", "cool", "sky"], gamma=2.2, grain=1.2),
+    Recipe("gradient_cyber_lime", "Cyber Lime", "gradient", ["#06120A", "#A3E635"],
+           ["dark", "green", "lime", "neon", "bright"], gamma=2.7, grain=1.2),
+    Recipe("gradient_ocean_depth", "Ocean Depth", "gradient", ["#020B14", "#06B6D4"],
+           ["dark", "cyan", "blue", "ocean", "deep"], gamma=2.6, grain=1.2),
+    Recipe("gradient_mocha_mousse", "Mocha Mousse", "gradient", ["#1A100B", "#A47864"],
+           ["dark", "brown", "mocha", "earth", "warm", "neutral"], gamma=2.3, top_pick=True, grain=1.2),
+    Recipe("gradient_graphite_steel", "Graphite Steel", "gradient", ["#F8FAFC", "#475569"],
+           ["light", "grey", "gray", "steel", "neutral", "mono"], gamma=1.9, grain=1.2),
+    # Two diagonals, for a little variety against a wall of vertical ramps.
+    Recipe("gradient_dusk_drift", "Dusk Drift", "gradient", ["#0B0614", "#DB2777"],
+           ["dark", "pink", "magenta", "dusk", "diagonal"], gamma=2.4, angle=0.22, grain=1.2),
+    Recipe("gradient_copper_dawn", "Copper Dawn", "gradient", ["#100805", "#C2703D"],
+           ["dark", "copper", "bronze", "warm", "diagonal"], gamma=2.4, angle=-0.22, grain=1.2),
+
+    # -- Blur, second wave -------------------------------------------------------------------
+    Recipe("blur_aurora", "Aurora", "blur", ["#03080C", "#22D3EE", "#7C3AED", "#34D399"],
+           ["dark", "aurora", "teal", "purple", "green", "grain"], grain=3.5, blobs=8, top_pick=True),
+    Recipe("blur_sunset_drift", "Sunset Drift", "blur", ["#0B0406", "#FB7185", "#F59E0B", "#7C2D12"],
+           ["dark", "sunset", "pink", "orange", "warm", "grain"], grain=3.5, blobs=8, top_pick=True),
+    Recipe("blur_cotton_candy", "Cotton Candy", "blur", ["#F6F2FB", "#93C5FD", "#F9A8D4", "#DDD6FE"],
+           ["light", "pastel", "pink", "blue", "soft", "grain"], grain=3.0, blobs=8),
+    Recipe("blur_mocha_swirl", "Mocha Swirl", "blur", ["#0D0806", "#A47864", "#4A2F22", "#D6B8A3"],
+           ["dark", "brown", "mocha", "earth", "warm", "grain"], grain=3.5, blobs=7, top_pick=True),
+    Recipe("blur_obsidian", "Obsidian", "blur", ["#050506", "#3F3F46", "#18181B", "#52525B"],
+           ["dark", "grey", "gray", "black", "subtle", "mono", "grain"], grain=3.0, blobs=7),
+    Recipe("blur_coral_reef", "Coral Reef", "blur", ["#04100F", "#FB7185", "#2DD4BF", "#0E7490"],
+           ["dark", "coral", "teal", "pink", "grain"], grain=3.5, blobs=8),
+    Recipe("blur_peach_glow", "Peach Glow", "blur", ["#FBF3ED", "#FDBA74", "#FCA5A5", "#FDE68A"],
+           ["light", "peach", "warm", "soft", "pastel", "grain"], grain=3.0, blobs=8),
+    Recipe("blur_royal", "Royal", "blur", ["#05040D", "#4F46E5", "#1E1B4B", "#818CF8"],
+           ["dark", "blue", "indigo", "royal", "premium", "grain"], grain=3.5, blobs=7),
+]
 
 CATEGORIES = [
     {"id": "solid", "label": "Solid", "order": 1,
@@ -264,6 +324,15 @@ CATEGORIES = [
      "keywords": ["fade", "two tone", "blend", "ramp", "colour", "color"]},
     {"id": "blur", "label": "Blur Grainy", "order": 3,
      "keywords": ["grain", "grainy", "bokeh", "soft", "defocus", "noise", "frosted"]},
+    # Announced but not filled yet. The app shows these chips with a COMING SOON panel rather than
+    # hiding them, so the catalogue can advertise what is on the way. Each one is a renderer that
+    # does not exist in this file yet - keep them generation-shaped, the way the other three are.
+    {"id": "dot_matrix", "label": "Dot Matrix", "order": 4,
+     "keywords": ["dots", "grid", "matrix", "halftone", "pattern"]},
+    {"id": "mesh", "label": "Mesh", "order": 5,
+     "keywords": ["mesh", "warp", "flow", "liquid", "wave"]},
+    {"id": "duotone", "label": "Duotone", "order": 6,
+     "keywords": ["duotone", "two tone", "split", "contrast"]},
 ]
 
 

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-09-23",
-  "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v1/wallpapers/",
+  "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v2/wallpapers/",
   "categories": [
     {
       "id": "solid",
@@ -44,6 +44,41 @@
         "defocus",
         "noise",
         "frosted"
+      ]
+    },
+    {
+      "id": "dot_matrix",
+      "label": "Dot Matrix",
+      "order": 4,
+      "keywords": [
+        "dots",
+        "grid",
+        "matrix",
+        "halftone",
+        "pattern"
+      ]
+    },
+    {
+      "id": "mesh",
+      "label": "Mesh",
+      "order": 5,
+      "keywords": [
+        "mesh",
+        "warp",
+        "flow",
+        "liquid",
+        "wave"
+      ]
+    },
+    {
+      "id": "duotone",
+      "label": "Duotone",
+      "order": 6,
+      "keywords": [
+        "duotone",
+        "two tone",
+        "split",
+        "contrast"
       ]
     }
   ],
@@ -690,6 +725,729 @@
       "bytes": 626384,
       "dominant": "#147037",
       "accent": "#22C55E",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_espresso",
+      "title": "Espresso",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "brown",
+        "coffee",
+        "warm",
+        "dark"
+      ],
+      "thumb": "thumb/solid_espresso.webp",
+      "preview": "preview/solid_espresso.webp",
+      "full": "full/solid_espresso.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 32232,
+      "dominant": "#2B1B14",
+      "accent": "#2B1B14",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_mocha",
+      "title": "Mocha",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "brown",
+        "mocha",
+        "warm",
+        "neutral",
+        "earth"
+      ],
+      "thumb": "thumb/solid_mocha.webp",
+      "preview": "preview/solid_mocha.webp",
+      "full": "full/solid_mocha.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 24870,
+      "dominant": "#A47864",
+      "accent": "#A47864",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_slate_blue",
+      "title": "Slate Blue",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "blue",
+        "grey",
+        "gray",
+        "muted"
+      ],
+      "thumb": "thumb/solid_slate_blue.webp",
+      "preview": "preview/solid_slate_blue.webp",
+      "full": "full/solid_slate_blue.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 18740,
+      "dominant": "#334155",
+      "accent": "#334155",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_deep_plum",
+      "title": "Deep Plum",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "purple",
+        "plum",
+        "dark",
+        "rich"
+      ],
+      "thumb": "thumb/solid_deep_plum.webp",
+      "preview": "preview/solid_deep_plum.webp",
+      "full": "full/solid_deep_plum.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 15364,
+      "dominant": "#2E1065",
+      "accent": "#2E1065",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_blush",
+      "title": "Blush",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "pink",
+        "light",
+        "soft",
+        "pastel"
+      ],
+      "thumb": "thumb/solid_blush.webp",
+      "preview": "preview/solid_blush.webp",
+      "full": "full/solid_blush.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 22532,
+      "dominant": "#F5D5D0",
+      "accent": "#F5D5D0",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_olive",
+      "title": "Olive",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "green",
+        "olive",
+        "earth",
+        "muted"
+      ],
+      "thumb": "thumb/solid_olive.webp",
+      "preview": "preview/solid_olive.webp",
+      "full": "full/solid_olive.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 10810,
+      "dominant": "#3F4A2E",
+      "accent": "#3F4A2E",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_steel",
+      "title": "Steel",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "grey",
+        "gray",
+        "neutral",
+        "mid"
+      ],
+      "thumb": "thumb/solid_steel.webp",
+      "preview": "preview/solid_steel.webp",
+      "full": "full/solid_steel.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 16980,
+      "dominant": "#6B7280",
+      "accent": "#6B7280",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_cream",
+      "title": "Cream",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "white",
+        "cream",
+        "light",
+        "warm"
+      ],
+      "thumb": "thumb/solid_cream.webp",
+      "preview": "preview/solid_cream.webp",
+      "full": "full/solid_cream.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 12520,
+      "dominant": "#FAF6EF",
+      "accent": "#FAF6EF",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_peach_sunset",
+      "title": "Peach Sunset",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "peach",
+        "orange",
+        "sunset",
+        "warm"
+      ],
+      "thumb": "thumb/gradient_peach_sunset.webp",
+      "preview": "preview/gradient_peach_sunset.webp",
+      "full": "full/gradient_peach_sunset.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 121752,
+      "dominant": "#FEC9B3",
+      "accent": "#FF8060",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_midnight_sapphire",
+      "title": "Midnight Sapphire",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "navy",
+        "midnight",
+        "deep"
+      ],
+      "thumb": "thumb/gradient_midnight_sapphire.webp",
+      "preview": "preview/gradient_midnight_sapphire.webp",
+      "full": "full/gradient_midnight_sapphire.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 151496,
+      "dominant": "#0D1A3D",
+      "accent": "#1E3988",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_lavender_haze",
+      "title": "Lavender Haze",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "purple",
+        "lavender",
+        "pastel",
+        "soft"
+      ],
+      "thumb": "thumb/gradient_lavender_haze.webp",
+      "preview": "preview/gradient_lavender_haze.webp",
+      "full": "full/gradient_lavender_haze.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 151406,
+      "dominant": "#DCC1FE",
+      "accent": "#A957F7",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_mint_cream",
+      "title": "Mint Cream",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "green",
+        "mint",
+        "fresh",
+        "pastel"
+      ],
+      "thumb": "thumb/gradient_mint_cream.webp",
+      "preview": "preview/gradient_mint_cream.webp",
+      "full": "full/gradient_mint_cream.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 164730,
+      "dominant": "#C6F1DA",
+      "accent": "#39D49A",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_coral_blush",
+      "title": "Coral Blush",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "pink",
+        "coral",
+        "soft",
+        "pastel"
+      ],
+      "thumb": "thumb/gradient_coral_blush.webp",
+      "preview": "preview/gradient_coral_blush.webp",
+      "full": "full/gradient_coral_blush.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 123252,
+      "dominant": "#FECFD3",
+      "accent": "#FC7387",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_sunset_gold",
+      "title": "Sunset Gold",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "gold",
+        "orange",
+        "sunset",
+        "warm"
+      ],
+      "thumb": "thumb/gradient_sunset_gold.webp",
+      "preview": "preview/gradient_sunset_gold.webp",
+      "full": "full/gradient_sunset_gold.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 157134,
+      "dominant": "#6E4B1D",
+      "accent": "#FBB046",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_rose_gold",
+      "title": "Rose Gold",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "rose gold",
+        "pink",
+        "neutral",
+        "premium"
+      ],
+      "thumb": "thumb/gradient_rose_gold.webp",
+      "preview": "preview/gradient_rose_gold.webp",
+      "full": "full/gradient_rose_gold.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 147298,
+      "dominant": "#F7DFD5",
+      "accent": "#E9B5A1",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_arctic",
+      "title": "Arctic",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "blue",
+        "ice",
+        "cool",
+        "sky"
+      ],
+      "thumb": "thumb/gradient_arctic.webp",
+      "preview": "preview/gradient_arctic.webp",
+      "full": "full/gradient_arctic.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 159480,
+      "dominant": "#B1D3EE",
+      "accent": "#0C85C8",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_cyber_lime",
+      "title": "Cyber Lime",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "green",
+        "lime",
+        "neon",
+        "bright"
+      ],
+      "thumb": "thumb/gradient_cyber_lime.webp",
+      "preview": "preview/gradient_cyber_lime.webp",
+      "full": "full/gradient_cyber_lime.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 154266,
+      "dominant": "#41611B",
+      "accent": "#A0E235",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_ocean_depth",
+      "title": "Ocean Depth",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "cyan",
+        "blue",
+        "ocean",
+        "deep"
+      ],
+      "thumb": "thumb/gradient_ocean_depth.webp",
+      "preview": "preview/gradient_ocean_depth.webp",
+      "full": "full/gradient_ocean_depth.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 162980,
+      "dominant": "#064C5C",
+      "accent": "#06B3D1",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_mocha_mousse",
+      "title": "Mocha Mousse",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "brown",
+        "mocha",
+        "earth",
+        "warm",
+        "neutral"
+      ],
+      "thumb": "thumb/gradient_mocha_mousse.webp",
+      "preview": "preview/gradient_mocha_mousse.webp",
+      "full": "full/gradient_mocha_mousse.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 154632,
+      "dominant": "#4F382D",
+      "accent": "#A27663",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_graphite_steel",
+      "title": "Graphite Steel",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "grey",
+        "gray",
+        "steel",
+        "neutral",
+        "mono"
+      ],
+      "thumb": "thumb/gradient_graphite_steel.webp",
+      "preview": "preview/gradient_graphite_steel.webp",
+      "full": "full/gradient_graphite_steel.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 168336,
+      "dominant": "#C2C7CE",
+      "accent": "#49576B",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_dusk_drift",
+      "title": "Dusk Drift",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "pink",
+        "magenta",
+        "dusk",
+        "diagonal"
+      ],
+      "thumb": "thumb/gradient_dusk_drift.webp",
+      "preview": "preview/gradient_dusk_drift.webp",
+      "full": "full/gradient_dusk_drift.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 154480,
+      "dominant": "#61153A",
+      "accent": "#DB2777",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_copper_dawn",
+      "title": "Copper Dawn",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "copper",
+        "bronze",
+        "warm",
+        "diagonal"
+      ],
+      "thumb": "thumb/gradient_copper_dawn.webp",
+      "preview": "preview/gradient_copper_dawn.webp",
+      "full": "full/gradient_copper_dawn.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 153684,
+      "dominant": "#58311A",
+      "accent": "#C2703D",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_aurora",
+      "title": "Aurora",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "aurora",
+        "teal",
+        "purple",
+        "green",
+        "grain"
+      ],
+      "thumb": "thumb/blur_aurora.webp",
+      "preview": "preview/blur_aurora.webp",
+      "full": "full/blur_aurora.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 687808,
+      "dominant": "#6191D5",
+      "accent": "#2CCFEE",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_sunset_drift",
+      "title": "Sunset Drift",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "sunset",
+        "pink",
+        "orange",
+        "warm",
+        "grain"
+      ],
+      "thumb": "thumb/blur_sunset_drift.webp",
+      "preview": "preview/blur_sunset_drift.webp",
+      "full": "full/blur_sunset_drift.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 677340,
+      "dominant": "#D57941",
+      "accent": "#F59E0B",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_cotton_candy",
+      "title": "Cotton Candy",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "pastel",
+        "pink",
+        "blue",
+        "soft",
+        "grain"
+      ],
+      "thumb": "thumb/blur_cotton_candy.webp",
+      "preview": "preview/blur_cotton_candy.webp",
+      "full": "full/blur_cotton_candy.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 461834,
+      "dominant": "#E0BEEA",
+      "accent": "#97C5FC",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_mocha_swirl",
+      "title": "Mocha Swirl",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "brown",
+        "mocha",
+        "earth",
+        "warm",
+        "grain"
+      ],
+      "thumb": "thumb/blur_mocha_swirl.webp",
+      "preview": "preview/blur_mocha_swirl.webp",
+      "full": "full/blur_mocha_swirl.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 704976,
+      "dominant": "#8E705F",
+      "accent": "#A47763",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_obsidian",
+      "title": "Obsidian",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "grey",
+        "gray",
+        "black",
+        "subtle",
+        "mono",
+        "grain"
+      ],
+      "thumb": "thumb/blur_obsidian.webp",
+      "preview": "preview/blur_obsidian.webp",
+      "full": "full/blur_obsidian.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 524872,
+      "dominant": "#35353B",
+      "accent": "#4B4C55",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_coral_reef",
+      "title": "Coral Reef",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "coral",
+        "teal",
+        "pink",
+        "grain"
+      ],
+      "thumb": "thumb/blur_coral_reef.webp",
+      "preview": "preview/blur_coral_reef.webp",
+      "full": "full/blur_coral_reef.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 684186,
+      "dominant": "#80A5A1",
+      "accent": "#2DD4BF",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_peach_glow",
+      "title": "Peach Glow",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "peach",
+        "warm",
+        "soft",
+        "pastel",
+        "grain"
+      ],
+      "thumb": "thumb/blur_peach_glow.webp",
+      "preview": "preview/blur_peach_glow.webp",
+      "full": "full/blur_peach_glow.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 412384,
+      "dominant": "#FDBF98",
+      "accent": "#FDBA76",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_royal",
+      "title": "Royal",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "indigo",
+        "royal",
+        "premium",
+        "grain"
+      ],
+      "thumb": "thumb/blur_royal.webp",
+      "preview": "preview/blur_royal.webp",
+      "full": "full/blur_royal.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 675772,
+      "dominant": "#4C4EAC",
+      "accent": "#4F46E5",
       "topPick": false,
       "addedAt": "2026-09-23"
     }

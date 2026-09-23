@@ -1,8 +1,8 @@
 {
   "_comment": "Authored input. Edit this, then run `npm run build` to regenerate catalog.json. Never hand-edit catalog.json: the build overwrites it. Ids are permanent and never reused; a re-cut wallpaper gets a new id.",
   "schema": 1,
-  "version": 1,
-  "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v1/wallpapers/",
+  "version": 2,
+  "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v2/wallpapers/",
   "categories": [
     {
       "id": "solid",
@@ -44,6 +44,41 @@
         "defocus",
         "noise",
         "frosted"
+      ]
+    },
+    {
+      "id": "dot_matrix",
+      "label": "Dot Matrix",
+      "order": 4,
+      "keywords": [
+        "dots",
+        "grid",
+        "matrix",
+        "halftone",
+        "pattern"
+      ]
+    },
+    {
+      "id": "mesh",
+      "label": "Mesh",
+      "order": 5,
+      "keywords": [
+        "mesh",
+        "warp",
+        "flow",
+        "liquid",
+        "wave"
+      ]
+    },
+    {
+      "id": "duotone",
+      "label": "Duotone",
+      "order": 6,
+      "keywords": [
+        "duotone",
+        "two tone",
+        "split",
+        "contrast"
       ]
     }
   ],
@@ -445,6 +480,467 @@
         "green",
         "grain",
         "nature"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_espresso",
+      "title": "Espresso",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "brown",
+        "coffee",
+        "warm",
+        "dark"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_mocha",
+      "title": "Mocha",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "brown",
+        "mocha",
+        "warm",
+        "neutral",
+        "earth"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_slate_blue",
+      "title": "Slate Blue",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "blue",
+        "grey",
+        "gray",
+        "muted"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_deep_plum",
+      "title": "Deep Plum",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "purple",
+        "plum",
+        "dark",
+        "rich"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_blush",
+      "title": "Blush",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "pink",
+        "light",
+        "soft",
+        "pastel"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_olive",
+      "title": "Olive",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "green",
+        "olive",
+        "earth",
+        "muted"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_steel",
+      "title": "Steel",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "grey",
+        "gray",
+        "neutral",
+        "mid"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_cream",
+      "title": "Cream",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "white",
+        "cream",
+        "light",
+        "warm"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_peach_sunset",
+      "title": "Peach Sunset",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "peach",
+        "orange",
+        "sunset",
+        "warm"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_midnight_sapphire",
+      "title": "Midnight Sapphire",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "navy",
+        "midnight",
+        "deep"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_lavender_haze",
+      "title": "Lavender Haze",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "purple",
+        "lavender",
+        "pastel",
+        "soft"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_mint_cream",
+      "title": "Mint Cream",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "green",
+        "mint",
+        "fresh",
+        "pastel"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_coral_blush",
+      "title": "Coral Blush",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "pink",
+        "coral",
+        "soft",
+        "pastel"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_sunset_gold",
+      "title": "Sunset Gold",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "gold",
+        "orange",
+        "sunset",
+        "warm"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_rose_gold",
+      "title": "Rose Gold",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "rose gold",
+        "pink",
+        "neutral",
+        "premium"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_arctic",
+      "title": "Arctic",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "blue",
+        "ice",
+        "cool",
+        "sky"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_cyber_lime",
+      "title": "Cyber Lime",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "green",
+        "lime",
+        "neon",
+        "bright"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_ocean_depth",
+      "title": "Ocean Depth",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "cyan",
+        "blue",
+        "ocean",
+        "deep"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_mocha_mousse",
+      "title": "Mocha Mousse",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "brown",
+        "mocha",
+        "earth",
+        "warm",
+        "neutral"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_graphite_steel",
+      "title": "Graphite Steel",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "grey",
+        "gray",
+        "steel",
+        "neutral",
+        "mono"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_dusk_drift",
+      "title": "Dusk Drift",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "pink",
+        "magenta",
+        "dusk",
+        "diagonal"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_copper_dawn",
+      "title": "Copper Dawn",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "copper",
+        "bronze",
+        "warm",
+        "diagonal"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_aurora",
+      "title": "Aurora",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "aurora",
+        "teal",
+        "purple",
+        "green",
+        "grain"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_sunset_drift",
+      "title": "Sunset Drift",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "sunset",
+        "pink",
+        "orange",
+        "warm",
+        "grain"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_cotton_candy",
+      "title": "Cotton Candy",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "pastel",
+        "pink",
+        "blue",
+        "soft",
+        "grain"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_mocha_swirl",
+      "title": "Mocha Swirl",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "brown",
+        "mocha",
+        "earth",
+        "warm",
+        "grain"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_obsidian",
+      "title": "Obsidian",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "grey",
+        "gray",
+        "black",
+        "subtle",
+        "mono",
+        "grain"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_coral_reef",
+      "title": "Coral Reef",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "coral",
+        "teal",
+        "pink",
+        "grain"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_peach_glow",
+      "title": "Peach Glow",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "peach",
+        "warm",
+        "soft",
+        "pastel",
+        "grain"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_royal",
+      "title": "Royal",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "indigo",
+        "royal",
+        "premium",
+        "grain"
       ],
       "addedAt": "2026-09-23"
     }

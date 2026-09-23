@@ -96,9 +96,10 @@ for (const w of catalog.wallpapers ?? []) {
   if (w.topPick === true) topPicks += 1;
 }
 
-for (const c of categoryIds) {
-  if (!used.has(c)) warn(`category "${c}" has no wallpapers — its chip would open an empty grid`);
-}
+// An empty category is intentional: the app renders its chip with a COMING SOON panel, which is
+// how the catalogue advertises what is on the way. Only report it, never fail on it.
+const empty = [...categoryIds].filter((c) => !used.has(c));
+if (empty.length) console.log(`info  coming-soon categories (no wallpapers yet): ${empty.join(", ")}`);
 if (topPicks === 0) warn("no wallpaper is marked topPick — the Top Picks chip would be empty");
 
 for (const w of warnings) console.warn(`warn  ${w}`);

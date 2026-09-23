@@ -5,77 +5,693 @@
   "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v1/wallpapers/",
   "categories": [
     {
-      "id": "amoled_black",
-      "label": "AMOLED Black",
+      "id": "solid",
+      "label": "Solid",
       "order": 1,
-      "keywords": ["oled", "amoled", "true black", "pure black", "battery"]
-    },
-    {
-      "id": "minimal",
-      "label": "Minimal",
-      "order": 2,
-      "keywords": ["simple", "clean", "plain", "negative space"]
-    },
-    {
-      "id": "abstract",
-      "label": "Abstract",
-      "order": 3,
-      "keywords": ["shapes", "fluid", "generative", "art"]
-    },
-    {
-      "id": "dark",
-      "label": "Dark",
-      "order": 4,
-      "keywords": ["night", "charcoal", "grey", "gray", "moody"]
+      "keywords": [
+        "flat",
+        "plain",
+        "single colour",
+        "single color",
+        "amoled",
+        "oled",
+        "pure black",
+        "minimal"
+      ]
     },
     {
       "id": "gradient",
       "label": "Gradient",
-      "order": 5,
-      "keywords": ["mesh", "blend", "colour", "color", "fade"]
-    },
-    {
-      "id": "geometric",
-      "label": "Geometric",
-      "order": 6,
-      "keywords": ["grid", "dot matrix", "lines", "pattern", "tessellation"]
+      "order": 2,
+      "keywords": [
+        "fade",
+        "two tone",
+        "blend",
+        "ramp",
+        "colour",
+        "color"
+      ]
     },
     {
       "id": "blur",
-      "label": "Blur",
-      "order": 7,
-      "keywords": ["bokeh", "frosted", "glass", "defocus", "soft"]
-    },
-    {
-      "id": "texture",
-      "label": "Texture",
-      "order": 8,
-      "keywords": ["paper", "fabric", "concrete", "metal", "grain"]
-    },
-    {
-      "id": "neon",
-      "label": "Neon",
-      "order": 9,
-      "keywords": ["glow", "cyber", "synthwave", "light trails"]
-    },
-    {
-      "id": "space",
-      "label": "Space",
-      "order": 10,
-      "keywords": ["galaxy", "nebula", "planet", "stars", "astronomy"]
-    },
-    {
-      "id": "nature",
-      "label": "Nature",
-      "order": 11,
-      "keywords": ["landscape", "mountain", "forest", "water", "outdoor"]
-    },
-    {
-      "id": "light",
-      "label": "Light",
-      "order": 12,
-      "keywords": ["white", "bright", "pastel", "airy"]
+      "label": "Blur Grainy",
+      "order": 3,
+      "keywords": [
+        "grain",
+        "grainy",
+        "bokeh",
+        "soft",
+        "defocus",
+        "noise",
+        "frosted"
+      ]
     }
   ],
-  "wallpapers": []
+  "wallpapers": [
+    {
+      "id": "solid_true_black",
+      "title": "True Black",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "amoled",
+        "oled",
+        "pure black",
+        "battery"
+      ],
+      "thumb": "thumb/solid_true_black.webp",
+      "preview": "preview/solid_true_black.webp",
+      "full": "full/solid_true_black.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 8256,
+      "dominant": "#000000",
+      "accent": "#000000",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_charcoal",
+      "title": "Charcoal",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "dark",
+        "grey",
+        "gray",
+        "near black"
+      ],
+      "thumb": "thumb/solid_charcoal.webp",
+      "preview": "preview/solid_charcoal.webp",
+      "full": "full/solid_charcoal.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 13966,
+      "dominant": "#121212",
+      "accent": "#121212",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_graphite",
+      "title": "Graphite",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "dark",
+        "grey",
+        "gray",
+        "slate"
+      ],
+      "thumb": "thumb/solid_graphite.webp",
+      "preview": "preview/solid_graphite.webp",
+      "full": "full/solid_graphite.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 17096,
+      "dominant": "#1C1C1E",
+      "accent": "#1C1C1E",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_ink_navy",
+      "title": "Ink Navy",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "midnight"
+      ],
+      "thumb": "thumb/solid_ink_navy.webp",
+      "preview": "preview/solid_ink_navy.webp",
+      "full": "full/solid_ink_navy.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 26770,
+      "dominant": "#0A1628",
+      "accent": "#0A1628",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_signal_red",
+      "title": "Signal Red",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "red",
+        "bold",
+        "bright"
+      ],
+      "thumb": "thumb/solid_signal_red.webp",
+      "preview": "preview/solid_signal_red.webp",
+      "full": "full/solid_signal_red.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 23072,
+      "dominant": "#E0392C",
+      "accent": "#E0392C",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_bone",
+      "title": "Bone",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "white",
+        "light",
+        "cream",
+        "off white"
+      ],
+      "thumb": "thumb/solid_bone.webp",
+      "preview": "preview/solid_bone.webp",
+      "full": "full/solid_bone.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 21384,
+      "dominant": "#F2EFE9",
+      "accent": "#F2EFE9",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_sand",
+      "title": "Sand",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "beige",
+        "tan",
+        "light",
+        "warm"
+      ],
+      "thumb": "thumb/solid_sand.webp",
+      "preview": "preview/solid_sand.webp",
+      "full": "full/solid_sand.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 12594,
+      "dominant": "#D8C9A8",
+      "accent": "#D8C9A8",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_forest",
+      "title": "Forest",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "green",
+        "dark",
+        "deep"
+      ],
+      "thumb": "thumb/solid_forest.webp",
+      "preview": "preview/solid_forest.webp",
+      "full": "full/solid_forest.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 16034,
+      "dominant": "#12352B",
+      "accent": "#12352B",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_teal",
+      "title": "Black Teal",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "teal",
+        "green",
+        "fade"
+      ],
+      "thumb": "thumb/gradient_black_teal.webp",
+      "preview": "preview/gradient_black_teal.webp",
+      "full": "full/gradient_black_teal.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 94622,
+      "dominant": "#02302B",
+      "accent": "#0D897C",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_crimson",
+      "title": "Black Crimson",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "red",
+        "fade"
+      ],
+      "thumb": "thumb/gradient_black_crimson.webp",
+      "preview": "preview/gradient_black_crimson.webp",
+      "full": "full/gradient_black_crimson.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 91404,
+      "dominant": "#500E09",
+      "accent": "#DB372B",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_violet",
+      "title": "Black Violet",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "purple",
+        "violet",
+        "fade"
+      ],
+      "thumb": "thumb/gradient_black_violet.webp",
+      "preview": "preview/gradient_black_violet.webp",
+      "full": "full/gradient_black_violet.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 88210,
+      "dominant": "#24094F",
+      "accent": "#6B27D5",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_amber",
+      "title": "Black Amber",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "orange",
+        "amber",
+        "gold"
+      ],
+      "thumb": "thumb/gradient_black_amber.webp",
+      "preview": "preview/gradient_black_amber.webp",
+      "full": "full/gradient_black_amber.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 99570,
+      "dominant": "#573502",
+      "accent": "#F09A0A",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_azure",
+      "title": "Black Azure",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "fade"
+      ],
+      "thumb": "thumb/gradient_black_azure.webp",
+      "preview": "preview/gradient_black_azure.webp",
+      "full": "full/gradient_black_azure.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 97266,
+      "dominant": "#05275B",
+      "accent": "#1C72F0",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_white_citron",
+      "title": "White Citron",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "white",
+        "yellow",
+        "bright"
+      ],
+      "thumb": "thumb/gradient_white_citron.webp",
+      "preview": "preview/gradient_white_citron.webp",
+      "full": "full/gradient_white_citron.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 121984,
+      "dominant": "#F8F8D3",
+      "accent": "#E9E525",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_white_rose",
+      "title": "White Rose",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "pink",
+        "rose",
+        "soft"
+      ],
+      "thumb": "thumb/gradient_white_rose.webp",
+      "preview": "preview/gradient_white_rose.webp",
+      "full": "full/gradient_white_rose.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 111716,
+      "dominant": "#FDDAEA",
+      "accent": "#F474B7",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_cream_sand",
+      "title": "Cream Sand",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "beige",
+        "tan",
+        "warm",
+        "neutral"
+      ],
+      "thumb": "thumb/gradient_cream_sand.webp",
+      "preview": "preview/gradient_cream_sand.webp",
+      "full": "full/gradient_cream_sand.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 163488,
+      "dominant": "#E7DABE",
+      "accent": "#CAAA6B",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_slate_mist",
+      "title": "Slate Mist",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "grey",
+        "gray",
+        "cool",
+        "neutral"
+      ],
+      "thumb": "thumb/gradient_slate_mist.webp",
+      "preview": "preview/gradient_slate_mist.webp",
+      "full": "full/gradient_slate_mist.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 162252,
+      "dominant": "#C4CBD4",
+      "accent": "#7F8EA1",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_ink_ocean",
+      "title": "Ink Ocean",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "cyan",
+        "deep"
+      ],
+      "thumb": "thumb/gradient_ink_ocean.webp",
+      "preview": "preview/gradient_ink_ocean.webp",
+      "full": "full/gradient_ink_ocean.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 163844,
+      "dominant": "#094A5E",
+      "accent": "#0EA3C4",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_ember",
+      "title": "Ember",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "orange",
+        "fire",
+        "warm"
+      ],
+      "thumb": "thumb/gradient_ember.webp",
+      "preview": "preview/gradient_ember.webp",
+      "full": "full/gradient_ember.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 153630,
+      "dominant": "#702611",
+      "accent": "#FB5A28",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_moss",
+      "title": "Moss",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "green",
+        "nature"
+      ],
+      "thumb": "thumb/gradient_moss.webp",
+      "preview": "preview/gradient_moss.webp",
+      "full": "full/gradient_moss.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 161466,
+      "dominant": "#284C31",
+      "accent": "#5DA769",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_ember_drift",
+      "title": "Ember Drift",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "red",
+        "grain",
+        "soft",
+        "bokeh"
+      ],
+      "thumb": "thumb/blur_ember_drift.webp",
+      "preview": "preview/blur_ember_drift.webp",
+      "full": "full/blur_ember_drift.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 678164,
+      "dominant": "#821E18",
+      "accent": "#E0392C",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_tidal",
+      "title": "Tidal",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "teal",
+        "cyan",
+        "grain",
+        "soft"
+      ],
+      "thumb": "thumb/blur_tidal.webp",
+      "preview": "preview/blur_tidal.webp",
+      "full": "full/blur_tidal.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 627430,
+      "dominant": "#0F635E",
+      "accent": "#14B8A6",
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_nocturne",
+      "title": "Nocturne",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "purple",
+        "violet",
+        "grain"
+      ],
+      "thumb": "thumb/blur_nocturne.webp",
+      "preview": "preview/blur_nocturne.webp",
+      "full": "full/blur_nocturne.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 673550,
+      "dominant": "#3C177D",
+      "accent": "#6D28D9",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_kiln",
+      "title": "Kiln",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "orange",
+        "amber",
+        "grain",
+        "warm"
+      ],
+      "thumb": "thumb/blur_kiln.webp",
+      "preview": "preview/blur_kiln.webp",
+      "full": "full/blur_kiln.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 678448,
+      "dominant": "#905607",
+      "accent": "#F59E0B",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_deep_current",
+      "title": "Deep Current",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "grain",
+        "soft"
+      ],
+      "thumb": "thumb/blur_deep_current.webp",
+      "preview": "preview/blur_deep_current.webp",
+      "full": "full/blur_deep_current.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 678888,
+      "dominant": "#0F458E",
+      "accent": "#1D74F5",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_petal",
+      "title": "Petal",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "pink",
+        "pastel",
+        "soft",
+        "grain"
+      ],
+      "thumb": "thumb/blur_petal.webp",
+      "preview": "preview/blur_petal.webp",
+      "full": "full/blur_petal.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 459040,
+      "dominant": "#F4BFE4",
+      "accent": "#F472B6",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_haze",
+      "title": "Haze",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "grey",
+        "gray",
+        "neutral",
+        "soft"
+      ],
+      "thumb": "thumb/blur_haze.webp",
+      "preview": "preview/blur_haze.webp",
+      "full": "full/blur_haze.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 531222,
+      "dominant": "#C8D1DD",
+      "accent": "#96A5BA",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_verdant",
+      "title": "Verdant",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "green",
+        "grain",
+        "nature"
+      ],
+      "thumb": "thumb/blur_verdant.webp",
+      "preview": "preview/blur_verdant.webp",
+      "full": "full/blur_verdant.webp",
+      "width": 1440,
+      "height": 3200,
+      "bytes": 626384,
+      "dominant": "#147037",
+      "accent": "#22C55E",
+      "topPick": false,
+      "addedAt": "2026-09-23"
+    }
+  ]
 }

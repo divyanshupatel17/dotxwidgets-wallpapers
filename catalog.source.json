@@ -4,18 +4,449 @@
   "version": 1,
   "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v1/wallpapers/",
   "categories": [
-    { "id": "amoled_black", "label": "AMOLED Black", "order": 1, "keywords": ["oled", "amoled", "true black", "pure black", "battery"] },
-    { "id": "minimal", "label": "Minimal", "order": 2, "keywords": ["simple", "clean", "plain", "negative space"] },
-    { "id": "abstract", "label": "Abstract", "order": 3, "keywords": ["shapes", "fluid", "generative", "art"] },
-    { "id": "dark", "label": "Dark", "order": 4, "keywords": ["night", "charcoal", "grey", "gray", "moody"] },
-    { "id": "gradient", "label": "Gradient", "order": 5, "keywords": ["mesh", "blend", "colour", "color", "fade"] },
-    { "id": "geometric", "label": "Geometric", "order": 6, "keywords": ["grid", "dot matrix", "lines", "pattern", "tessellation"] },
-    { "id": "blur", "label": "Blur", "order": 7, "keywords": ["bokeh", "frosted", "glass", "defocus", "soft"] },
-    { "id": "texture", "label": "Texture", "order": 8, "keywords": ["paper", "fabric", "concrete", "metal", "grain"] },
-    { "id": "neon", "label": "Neon", "order": 9, "keywords": ["glow", "cyber", "synthwave", "light trails"] },
-    { "id": "space", "label": "Space", "order": 10, "keywords": ["galaxy", "nebula", "planet", "stars", "astronomy"] },
-    { "id": "nature", "label": "Nature", "order": 11, "keywords": ["landscape", "mountain", "forest", "water", "outdoor"] },
-    { "id": "light", "label": "Light", "order": 12, "keywords": ["white", "bright", "pastel", "airy"] }
+    {
+      "id": "solid",
+      "label": "Solid",
+      "order": 1,
+      "keywords": [
+        "flat",
+        "plain",
+        "single colour",
+        "single color",
+        "amoled",
+        "oled",
+        "pure black",
+        "minimal"
+      ]
+    },
+    {
+      "id": "gradient",
+      "label": "Gradient",
+      "order": 2,
+      "keywords": [
+        "fade",
+        "two tone",
+        "blend",
+        "ramp",
+        "colour",
+        "color"
+      ]
+    },
+    {
+      "id": "blur",
+      "label": "Blur Grainy",
+      "order": 3,
+      "keywords": [
+        "grain",
+        "grainy",
+        "bokeh",
+        "soft",
+        "defocus",
+        "noise",
+        "frosted"
+      ]
+    }
   ],
-  "wallpapers": []
+  "wallpapers": [
+    {
+      "id": "solid_true_black",
+      "title": "True Black",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "amoled",
+        "oled",
+        "pure black",
+        "battery"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_charcoal",
+      "title": "Charcoal",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "dark",
+        "grey",
+        "gray",
+        "near black"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_graphite",
+      "title": "Graphite",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "dark",
+        "grey",
+        "gray",
+        "slate"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_ink_navy",
+      "title": "Ink Navy",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "midnight"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_signal_red",
+      "title": "Signal Red",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "red",
+        "bold",
+        "bright"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_bone",
+      "title": "Bone",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "white",
+        "light",
+        "cream",
+        "off white"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_sand",
+      "title": "Sand",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "beige",
+        "tan",
+        "light",
+        "warm"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "solid_forest",
+      "title": "Forest",
+      "categories": [
+        "solid"
+      ],
+      "keywords": [
+        "green",
+        "dark",
+        "deep"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_teal",
+      "title": "Black Teal",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "teal",
+        "green",
+        "fade"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_crimson",
+      "title": "Black Crimson",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "red",
+        "fade"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_violet",
+      "title": "Black Violet",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "purple",
+        "violet",
+        "fade"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_amber",
+      "title": "Black Amber",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "orange",
+        "amber",
+        "gold"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_black_azure",
+      "title": "Black Azure",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "fade"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_white_citron",
+      "title": "White Citron",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "white",
+        "yellow",
+        "bright"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_white_rose",
+      "title": "White Rose",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "pink",
+        "rose",
+        "soft"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_cream_sand",
+      "title": "Cream Sand",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "beige",
+        "tan",
+        "warm",
+        "neutral"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_slate_mist",
+      "title": "Slate Mist",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "light",
+        "grey",
+        "gray",
+        "cool",
+        "neutral"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_ink_ocean",
+      "title": "Ink Ocean",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "cyan",
+        "deep"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_ember",
+      "title": "Ember",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "orange",
+        "fire",
+        "warm"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "gradient_moss",
+      "title": "Moss",
+      "categories": [
+        "gradient"
+      ],
+      "keywords": [
+        "dark",
+        "green",
+        "nature"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_ember_drift",
+      "title": "Ember Drift",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "red",
+        "grain",
+        "soft",
+        "bokeh"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_tidal",
+      "title": "Tidal",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "teal",
+        "cyan",
+        "grain",
+        "soft"
+      ],
+      "topPick": true,
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_nocturne",
+      "title": "Nocturne",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "purple",
+        "violet",
+        "grain"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_kiln",
+      "title": "Kiln",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "orange",
+        "amber",
+        "grain",
+        "warm"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_deep_current",
+      "title": "Deep Current",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "blue",
+        "grain",
+        "soft"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_petal",
+      "title": "Petal",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "pink",
+        "pastel",
+        "soft",
+        "grain"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_haze",
+      "title": "Haze",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "light",
+        "grey",
+        "gray",
+        "neutral",
+        "soft"
+      ],
+      "addedAt": "2026-09-23"
+    },
+    {
+      "id": "blur_verdant",
+      "title": "Verdant",
+      "categories": [
+        "blur"
+      ],
+      "keywords": [
+        "dark",
+        "green",
+        "grain",
+        "nature"
+      ],
+      "addedAt": "2026-09-23"
+    }
+  ]
 }

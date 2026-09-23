@@ -29,6 +29,14 @@ const TIERS = [
   { name: "full", width: 1440, height: 3200, quality: 90 },
 ];
 
+/** Categories whose images are smooth enough to band under lossy encoding. WebP at q90 smooths
+ *  away the +/-1 LSB dither the generator applies, which on a long dark ramp turns into flat bands
+ *  hundreds of pixels tall. The generator answers with a little real grain; this answers with more
+ *  bits to carry it. Measured on gradient_black_teal: q90 leaves a 1224 px flat run, q95 with
+ *  grain leaves 56 px, for ~200 KB instead of ~18 KB. Well worth it against a 1.5 MB cap. */
+const SMOOTH_CATEGORIES = new Set(["gradient"]);
+const SMOOTH_QUALITY_BOOST = 5;
+
 /** A `full` over this gets re-encoded a step down rather than shipped. */
 const FULL_MAX_BYTES = 1.5 * 1024 * 1024;
 const FULL_FALLBACK_QUALITY = 86;
@@ -57,10 +65,13 @@ async function main() {
       );
     }
 
-    // A pure smooth gradient bands at q90. Fix it in the pixels with ~1% noise rather than by
-    // shipping a PNG five times the size.
-    const needsNoise = entry.categories.includes("gradient");
-    const prepared = needsNoise ? await addDither(master) : await sharp(master).toBuffer();
+    // Masters arrive already dithered and grained by tools/generate.py, at full float precision
+    // before quantisation. Nothing here may touch the pixels beyond resizing and encoding: an
+    // extra noise pass on top re-quantises an already-quantised image and adds colour specks.
+    const prepared = await sharp(master).toBuffer();
+
+    // A thumb is downscaled far enough that averaging removes the banding on its own.
+    const boost = entry.categories.some((c) => SMOOTH_CATEGORIES.has(c)) ? SMOOTH_QUALITY_BOOST : 0;
 
     const paths = {};
     for (const tier of TIERS) {
@@ -69,7 +80,8 @@ async function main() {
       paths[tier.name] = rel;
       if (onlyIds.length && !onlyIds.includes(entry.id) && (await exists(dest))) continue;
 
-      await encode(prepared, dest, tier, tier.quality);
+      const quality = tier.name === "thumb" ? tier.quality : tier.quality + boost;
+      await encode(prepared, dest, tier, quality);
       if (tier.name === "full" && (await stat(dest)).size > FULL_MAX_BYTES) {
         await encode(prepared, dest, tier, FULL_FALLBACK_QUALITY);
         console.warn(`  ${entry.id}: full re-encoded at q${FULL_FALLBACK_QUALITY} to stay under 1.5 MB`);
@@ -123,39 +135,53 @@ async function encode(buffer, dest, tier, quality) {
     .toFile(dest);
 }
 
-/** ~1% monochrome gaussian noise, soft-lit over the image, to break up gradient banding. */
-async function addDither(master) {
-  const noise = await sharp({
-    create: {
-      width: MASTER.width,
-      height: MASTER.height,
-      channels: 3,
-      background: { r: 128, g: 128, b: 128 },
-      noise: { type: "gaussian", mean: 128, sigma: 3 },
-    },
-  })
-    .png()
-    .toBuffer();
-  return sharp(master).composite([{ input: noise, blend: "soft-light" }]).toBuffer();
-}
-
-/** dominant = the grid tile's background while the thumb loads, so it must be the *ground* colour,
- *  not the eye-catching one. accent = the most saturated pixel cluster. */
+/** dominant = the grid tile's background while the thumb loads, so it wants the image's overall
+ *  colour, averaged in linear light (averaging in sRGB biases dark). accent = the most saturated
+ *  colour with enough brightness to actually be the one a person would name. */
 async function extractColors(buffer) {
-  const { dominant } = await sharp(buffer).stats();
-  const small = await sharp(buffer).resize(32, 71, { fit: "fill" }).raw().toBuffer();
+  const { data, info } = await sharp(buffer)
+    .resize(36, 80, { fit: "fill" })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  const ch = info.channels;
 
-  let best = { score: -1, r: dominant.r, g: dominant.g, b: dominant.b };
-  for (let i = 0; i < small.length; i += 3) {
-    const [r, g, b] = [small[i], small[i + 1], small[i + 2]];
+  const sum = [0, 0, 0];
+  let n = 0;
+  let best = { score: -1, r: 0, g: 0, b: 0 };
+
+  for (let i = 0; i < data.length; i += ch) {
+    const [r, g, b] = [data[i], data[i + 1], data[i + 2]];
+    sum[0] += srgbToLinear(r);
+    sum[1] += srgbToLinear(g);
+    sum[2] += srgbToLinear(b);
+    n += 1;
+
     const max = Math.max(r, g, b);
     const min = Math.min(r, g, b);
-    if (max === 0) continue;
-    const score = ((max - min) / max) * (max / 255); // saturation, weighted by brightness
+    // Ignore near-black pixels: a single dark speck can be fully "saturated" and mean nothing.
+    if (max < 40) continue;
+    const score = ((max - min) / max) * (max / 255);
     if (score > best.score) best = { score, r, g, b };
   }
-  return { dominant: hex(dominant), accent: hex(best) };
+
+  const dominant = {
+    r: linearToSrgb(sum[0] / n),
+    g: linearToSrgb(sum[1] / n),
+    b: linearToSrgb(sum[2] / n),
+  };
+  // A flat or near-monochrome image has no accent worth the name; its own colour is the honest one.
+  return { dominant: hex(dominant), accent: hex(best.score < 0 ? dominant : best) };
 }
+
+const srgbToLinear = (v) => {
+  const c = v / 255;
+  return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+};
+
+const linearToSrgb = (c) => {
+  const v = c <= 0.0031308 ? c * 12.92 : 1.055 * c ** (1 / 2.4) - 0.055;
+  return Math.max(0, Math.min(255, v * 255));
+};
 
 const hex = ({ r, g, b }) =>
   `#${[r, g, b].map((v) => Math.round(v).toString(16).padStart(2, "0")).join("").toUpperCase()}`;

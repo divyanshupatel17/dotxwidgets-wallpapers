@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "version": 1,
+  "updatedAt": "2026-09-23",
+  "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v1/wallpapers/",
+  "categories": [
+    {
+      "id": "amoled_black",
+      "label": "AMOLED Black",
+      "order": 1,
+      "keywords": ["oled", "amoled", "true black", "pure black", "battery"]
+    },
+    {
+      "id": "minimal",
+      "label": "Minimal",
+      "order": 2,
+      "keywords": ["simple", "clean", "plain", "negative space"]
+    },
+    {
+      "id": "abstract",
+      "label": "Abstract",
+      "order": 3,
+      "keywords": ["shapes", "fluid", "generative", "art"]
+    },
+    {
+      "id": "dark",
+      "label": "Dark",
+      "order": 4,
+      "keywords": ["night", "charcoal", "grey", "gray", "moody"]
+    },
+    {
+      "id": "gradient",
+      "label": "Gradient",
+      "order": 5,
+      "keywords": ["mesh", "blend", "colour", "color", "fade"]
+    },
+    {
+      "id": "geometric",
+      "label": "Geometric",
+      "order": 6,
+      "keywords": ["grid", "dot matrix", "lines", "pattern", "tessellation"]
+    },
+    {
+      "id": "blur",
+      "label": "Blur",
+      "order": 7,
+      "keywords": ["bokeh", "frosted", "glass", "defocus", "soft"]
+    },
+    {
+      "id": "texture",
+      "label": "Texture",
+      "order": 8,
+      "keywords": ["paper", "fabric", "concrete", "metal", "grain"]
+    },
+    {
+      "id": "neon",
+      "label": "Neon",
+      "order": 9,
+      "keywords": ["glow", "cyber", "synthwave", "light trails"]
+    },
+    {
+      "id": "space",
+      "label": "Space",
+      "order": 10,
+      "keywords": ["galaxy", "nebula", "planet", "stars", "astronomy"]
+    },
+    {
+      "id": "nature",
+      "label": "Nature",
+      "order": 11,
+      "keywords": ["landscape", "mountain", "forest", "water", "outdoor"]
+    },
+    {
+      "id": "light",
+      "label": "Light",
+      "order": 12,
+      "keywords": ["white", "bright", "pastel", "airy"]
+    }
+  ],
+  "wallpapers": []
+}

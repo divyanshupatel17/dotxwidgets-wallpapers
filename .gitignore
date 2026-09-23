@@ -1,0 +1,7 @@
+# 1440x3200 PNG masters. Derived .webp tiers are committed, the originals are not:
+# they would multiply the repo size for files nothing consumes.
+masters/
+
+node_modules/
+.DS_Store
+Thumbs.db

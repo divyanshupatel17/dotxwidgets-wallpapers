@@ -1,0 +1,21 @@
+name: validate
+
+# catalog.json is fetched live by every installed copy of the app, so a broken manifest reaching
+# main is a broken wallpaper screen for everyone on their next refresh. This gate is the only
+# thing between a bad push and that.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate catalog.json
+        run: node tools/validate.mjs

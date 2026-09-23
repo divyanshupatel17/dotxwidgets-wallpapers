@@ -1,0 +1,17 @@
+{
+  "name": "dotx-wallpapers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wallpaper content and catalog manifest for DotX Widgets Pro, served over jsDelivr.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "validate": "node tools/validate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

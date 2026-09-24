@@ -1,8 +1,8 @@
 {
   "_comment": "Authored input. Edit this, then run `npm run build` to regenerate catalog.json. Never hand-edit catalog.json: the build overwrites it. Ids are permanent and never reused; a re-cut wallpaper gets a new id.",
   "schema": 1,
-  "version": 2,
-  "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotx-wallpapers@v2/wallpapers/",
+  "version": 3,
+  "cdnBase": "https://cdn.jsdelivr.net/gh/divyanshupatel17/dotxwidgets-wallpapers@v3/wallpapers/",
   "categories": [
     {
       "id": "solid",
